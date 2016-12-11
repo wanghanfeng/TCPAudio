@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2F710BA1DFA63500089DA3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F710B91DFA63500089DA3B /* main.m */; };
+		E2F710BD1DFA63500089DA3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F710BC1DFA63500089DA3B /* AppDelegate.m */; };
+		E2F710C01DFA63500089DA3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F710BF1DFA63500089DA3B /* ViewController.m */; };
+		E2F710C31DFA63500089DA3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F710C11DFA63500089DA3B /* Main.storyboard */; };
+		E2F710C51DFA63500089DA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F710C41DFA63500089DA3B /* Assets.xcassets */; };
+		E2F710C81DFA63500089DA3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F710C61DFA63500089DA3B /* LaunchScreen.storyboard */; };
+		E2F710D31DFA63500089DA3B /* TCPAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F710D21DFA63500089DA3B /* TCPAudioTests.m */; };
+		E2F710DE1DFA63500089DA3B /* TCPAudioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F710DD1DFA63500089DA3B /* TCPAudioUITests.m */; };
+		E2F710F01DFADCCB0089DA3B /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F710ED1DFADCCA0089DA3B /* GCDAsyncSocket.m */; };
+		E2F710F11DFADCCB0089DA3B /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F710EF1DFADCCB0089DA3B /* GCDAsyncUdpSocket.m */; };
+		E2F710F51DFAE26D0089DA3B /* TcpServerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F710F41DFAE26D0089DA3B /* TcpServerVC.m */; };
+		E2F710F81DFAE2950089DA3B /* TcpClientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F710F71DFAE2950089DA3B /* TcpClientVC.m */; };
+		E2F710FC1DFAE6A60089DA3B /* TCPServerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F710FB1DFAE6A60089DA3B /* TCPServerModel.m */; };
+		E2F710FF1DFAE6B70089DA3B /* TCPClientModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F710FE1DFAE6B70089DA3B /* TCPClientModel.m */; };
+		E2FB4D121DFD04F70056E188 /* BNRAudioData.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FB4D0F1DFD04F70056E188 /* BNRAudioData.m */; };
+		E2FB4D131DFD04F70056E188 /* VoiceConvertHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FB4D111DFD04F70056E188 /* VoiceConvertHandle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2F710CF1DFA63500089DA3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2F710AD1DFA63500089DA3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2F710B41DFA63500089DA3B;
+			remoteInfo = TCPAudio;
+		};
+		E2F710DA1DFA63500089DA3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2F710AD1DFA63500089DA3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2F710B41DFA63500089DA3B;
+			remoteInfo = TCPAudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2F710B51DFA63500089DA3B /* TCPAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCPAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F710B91DFA63500089DA3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2F710BB1DFA63500089DA3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2F710BC1DFA63500089DA3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2F710BE1DFA63500089DA3B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E2F710BF1DFA63500089DA3B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E2F710C21DFA63500089DA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2F710C41DFA63500089DA3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2F710C71DFA63500089DA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2F710C91DFA63500089DA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F710CE1DFA63500089DA3B /* TCPAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCPAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F710D21DFA63500089DA3B /* TCPAudioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPAudioTests.m; sourceTree = "<group>"; };
+		E2F710D41DFA63500089DA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F710D91DFA63500089DA3B /* TCPAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCPAudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F710DD1DFA63500089DA3B /* TCPAudioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPAudioUITests.m; sourceTree = "<group>"; };
+		E2F710DF1DFA63500089DA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F710EC1DFADCCA0089DA3B /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		E2F710ED1DFADCCA0089DA3B /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		E2F710EE1DFADCCB0089DA3B /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		E2F710EF1DFADCCB0089DA3B /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		E2F710F31DFAE26D0089DA3B /* TcpServerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcpServerVC.h; sourceTree = "<group>"; };
+		E2F710F41DFAE26D0089DA3B /* TcpServerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcpServerVC.m; sourceTree = "<group>"; };
+		E2F710F61DFAE2950089DA3B /* TcpClientVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcpClientVC.h; sourceTree = "<group>"; };
+		E2F710F71DFAE2950089DA3B /* TcpClientVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcpClientVC.m; sourceTree = "<group>"; };
+		E2F710FA1DFAE6A60089DA3B /* TCPServerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPServerModel.h; sourceTree = "<group>"; };
+		E2F710FB1DFAE6A60089DA3B /* TCPServerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPServerModel.m; sourceTree = "<group>"; };
+		E2F710FD1DFAE6B70089DA3B /* TCPClientModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPClientModel.h; sourceTree = "<group>"; };
+		E2F710FE1DFAE6B70089DA3B /* TCPClientModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPClientModel.m; sourceTree = "<group>"; };
+		E2FB4D0E1DFD04F70056E188 /* BNRAudioData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRAudioData.h; sourceTree = "<group>"; };
+		E2FB4D0F1DFD04F70056E188 /* BNRAudioData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRAudioData.m; sourceTree = "<group>"; };
+		E2FB4D101DFD04F70056E188 /* VoiceConvertHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConvertHandle.h; sourceTree = "<group>"; };
+		E2FB4D111DFD04F70056E188 /* VoiceConvertHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceConvertHandle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2F710B21DFA63500089DA3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2F710CB1DFA63500089DA3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2F710D61DFA63500089DA3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2F710AC1DFA63500089DA3B = {
+			isa = PBXGroup;
+			children = (
+				E2F710B71DFA63500089DA3B /* TCPAudio */,
+				E2F710D11DFA63500089DA3B /* TCPAudioTests */,
+				E2F710DC1DFA63500089DA3B /* TCPAudioUITests */,
+				E2F710B61DFA63500089DA3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2F710B61DFA63500089DA3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2F710B51DFA63500089DA3B /* TCPAudio.app */,
+				E2F710CE1DFA63500089DA3B /* TCPAudioTests.xctest */,
+				E2F710D91DFA63500089DA3B /* TCPAudioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2F710B71DFA63500089DA3B /* TCPAudio */ = {
+			isa = PBXGroup;
+			children = (
+				E2F710F91DFAE6320089DA3B /* Model */,
+				E2F710F21DFAE1FF0089DA3B /* ViewControllers */,
+				E2F710EB1DFADC970089DA3B /* Lib */,
+				E2F710BB1DFA63500089DA3B /* AppDelegate.h */,
+				E2F710BC1DFA63500089DA3B /* AppDelegate.m */,
+				E2F710BE1DFA63500089DA3B /* ViewController.h */,
+				E2F710BF1DFA63500089DA3B /* ViewController.m */,
+				E2F710C11DFA63500089DA3B /* Main.storyboard */,
+				E2F710C41DFA63500089DA3B /* Assets.xcassets */,
+				E2F710C61DFA63500089DA3B /* LaunchScreen.storyboard */,
+				E2F710C91DFA63500089DA3B /* Info.plist */,
+				E2F710B81DFA63500089DA3B /* Supporting Files */,
+			);
+			path = TCPAudio;
+			sourceTree = "<group>";
+		};
+		E2F710B81DFA63500089DA3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2F710B91DFA63500089DA3B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2F710D11DFA63500089DA3B /* TCPAudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2F710D21DFA63500089DA3B /* TCPAudioTests.m */,
+				E2F710D41DFA63500089DA3B /* Info.plist */,
+			);
+			path = TCPAudioTests;
+			sourceTree = "<group>";
+		};
+		E2F710DC1DFA63500089DA3B /* TCPAudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2F710DD1DFA63500089DA3B /* TCPAudioUITests.m */,
+				E2F710DF1DFA63500089DA3B /* Info.plist */,
+			);
+			path = TCPAudioUITests;
+			sourceTree = "<group>";
+		};
+		E2F710EB1DFADC970089DA3B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				E2F710EC1DFADCCA0089DA3B /* GCDAsyncSocket.h */,
+				E2F710ED1DFADCCA0089DA3B /* GCDAsyncSocket.m */,
+				E2F710EE1DFADCCB0089DA3B /* GCDAsyncUdpSocket.h */,
+				E2F710EF1DFADCCB0089DA3B /* GCDAsyncUdpSocket.m */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		E2F710F21DFAE1FF0089DA3B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2F710F31DFAE26D0089DA3B /* TcpServerVC.h */,
+				E2F710F41DFAE26D0089DA3B /* TcpServerVC.m */,
+				E2F710F61DFAE2950089DA3B /* TcpClientVC.h */,
+				E2F710F71DFAE2950089DA3B /* TcpClientVC.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E2F710F91DFAE6320089DA3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2FB4D0D1DFD04CD0056E188 /* VoiceManager */,
+				E2FB4D0C1DFD04B10056E188 /* Network */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E2FB4D0C1DFD04B10056E188 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E2F710FA1DFAE6A60089DA3B /* TCPServerModel.h */,
+				E2F710FB1DFAE6A60089DA3B /* TCPServerModel.m */,
+				E2F710FD1DFAE6B70089DA3B /* TCPClientModel.h */,
+				E2F710FE1DFAE6B70089DA3B /* TCPClientModel.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		E2FB4D0D1DFD04CD0056E188 /* VoiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				E2FB4D0E1DFD04F70056E188 /* BNRAudioData.h */,
+				E2FB4D0F1DFD04F70056E188 /* BNRAudioData.m */,
+				E2FB4D101DFD04F70056E188 /* VoiceConvertHandle.h */,
+				E2FB4D111DFD04F70056E188 /* VoiceConvertHandle.m */,
+			);
+			name = VoiceManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2F710B41DFA63500089DA3B /* TCPAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2F710E21DFA63500089DA3B /* Build configuration list for PBXNativeTarget "TCPAudio" */;
+			buildPhases = (
+				E2F710B11DFA63500089DA3B /* Sources */,
+				E2F710B21DFA63500089DA3B /* Frameworks */,
+				E2F710B31DFA63500089DA3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCPAudio;
+			productName = TCPAudio;
+			productReference = E2F710B51DFA63500089DA3B /* TCPAudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2F710CD1DFA63500089DA3B /* TCPAudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2F710E51DFA63500089DA3B /* Build configuration list for PBXNativeTarget "TCPAudioTests" */;
+			buildPhases = (
+				E2F710CA1DFA63500089DA3B /* Sources */,
+				E2F710CB1DFA63500089DA3B /* Frameworks */,
+				E2F710CC1DFA63500089DA3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2F710D01DFA63500089DA3B /* PBXTargetDependency */,
+			);
+			name = TCPAudioTests;
+			productName = TCPAudioTests;
+			productReference = E2F710CE1DFA63500089DA3B /* TCPAudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2F710D81DFA63500089DA3B /* TCPAudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2F710E81DFA63500089DA3B /* Build configuration list for PBXNativeTarget "TCPAudioUITests" */;
+			buildPhases = (
+				E2F710D51DFA63500089DA3B /* Sources */,
+				E2F710D61DFA63500089DA3B /* Frameworks */,
+				E2F710D71DFA63500089DA3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2F710DB1DFA63500089DA3B /* PBXTargetDependency */,
+			);
+			name = TCPAudioUITests;
+			productName = TCPAudioUITests;
+			productReference = E2F710D91DFA63500089DA3B /* TCPAudioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2F710AD1DFA63500089DA3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					E2F710B41DFA63500089DA3B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8TY44FG32X;
+						ProvisioningStyle = Automatic;
+					};
+					E2F710CD1DFA63500089DA3B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3MW34677PD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E2F710B41DFA63500089DA3B;
+					};
+					E2F710D81DFA63500089DA3B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3MW34677PD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E2F710B41DFA63500089DA3B;
+					};
+				};
+			};
+			buildConfigurationList = E2F710B01DFA63500089DA3B /* Build configuration list for PBXProject "TCPAudio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2F710AC1DFA63500089DA3B;
+			productRefGroup = E2F710B61DFA63500089DA3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2F710B41DFA63500089DA3B /* TCPAudio */,
+				E2F710CD1DFA63500089DA3B /* TCPAudioTests */,
+				E2F710D81DFA63500089DA3B /* TCPAudioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2F710B31DFA63500089DA3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2F710C81DFA63500089DA3B /* LaunchScreen.storyboard in Resources */,
+				E2F710C51DFA63500089DA3B /* Assets.xcassets in Resources */,
+				E2F710C31DFA63500089DA3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2F710CC1DFA63500089DA3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2F710D71DFA63500089DA3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2F710B11DFA63500089DA3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2F710F01DFADCCB0089DA3B /* GCDAsyncSocket.m in Sources */,
+				E2F710F11DFADCCB0089DA3B /* GCDAsyncUdpSocket.m in Sources */,
+				E2F710FC1DFAE6A60089DA3B /* TCPServerModel.m in Sources */,
+				E2FB4D121DFD04F70056E188 /* BNRAudioData.m in Sources */,
+				E2F710C01DFA63500089DA3B /* ViewController.m in Sources */,
+				E2F710FF1DFAE6B70089DA3B /* TCPClientModel.m in Sources */,
+				E2F710BD1DFA63500089DA3B /* AppDelegate.m in Sources */,
+				E2F710BA1DFA63500089DA3B /* main.m in Sources */,
+				E2F710F51DFAE26D0089DA3B /* TcpServerVC.m in Sources */,
+				E2F710F81DFAE2950089DA3B /* TcpClientVC.m in Sources */,
+				E2FB4D131DFD04F70056E188 /* VoiceConvertHandle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2F710CA1DFA63500089DA3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2F710D31DFA63500089DA3B /* TCPAudioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2F710D51DFA63500089DA3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2F710DE1DFA63500089DA3B /* TCPAudioUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2F710D01DFA63500089DA3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2F710B41DFA63500089DA3B /* TCPAudio */;
+			targetProxy = E2F710CF1DFA63500089DA3B /* PBXContainerItemProxy */;
+		};
+		E2F710DB1DFA63500089DA3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2F710B41DFA63500089DA3B /* TCPAudio */;
+			targetProxy = E2F710DA1DFA63500089DA3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2F710C11DFA63500089DA3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2F710C21DFA63500089DA3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2F710C61DFA63500089DA3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2F710C71DFA63500089DA3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2F710E01DFA63500089DA3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2F710E11DFA63500089DA3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2F710E31DFA63500089DA3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8TY44FG32X;
+				INFOPLIST_FILE = TCPAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itripbuyer.TCPAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E2F710E41DFA63500089DA3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8TY44FG32X;
+				INFOPLIST_FILE = TCPAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itripbuyer.TCPAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E2F710E61DFA63500089DA3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3MW34677PD;
+				INFOPLIST_FILE = TCPAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itripbuyer.TCPAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCPAudio.app/TCPAudio";
+			};
+			name = Debug;
+		};
+		E2F710E71DFA63500089DA3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3MW34677PD;
+				INFOPLIST_FILE = TCPAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itripbuyer.TCPAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCPAudio.app/TCPAudio";
+			};
+			name = Release;
+		};
+		E2F710E91DFA63500089DA3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3MW34677PD;
+				INFOPLIST_FILE = TCPAudioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itripbuyer.TCPAudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TCPAudio;
+			};
+			name = Debug;
+		};
+		E2F710EA1DFA63500089DA3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3MW34677PD;
+				INFOPLIST_FILE = TCPAudioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itripbuyer.TCPAudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TCPAudio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2F710B01DFA63500089DA3B /* Build configuration list for PBXProject "TCPAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2F710E01DFA63500089DA3B /* Debug */,
+				E2F710E11DFA63500089DA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2F710E21DFA63500089DA3B /* Build configuration list for PBXNativeTarget "TCPAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2F710E31DFA63500089DA3B /* Debug */,
+				E2F710E41DFA63500089DA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2F710E51DFA63500089DA3B /* Build configuration list for PBXNativeTarget "TCPAudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2F710E61DFA63500089DA3B /* Debug */,
+				E2F710E71DFA63500089DA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2F710E81DFA63500089DA3B /* Build configuration list for PBXNativeTarget "TCPAudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2F710E91DFA63500089DA3B /* Debug */,
+				E2F710EA1DFA63500089DA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2F710AD1DFA63500089DA3B /* Project object */;
+}
